@@ -1,6 +1,6 @@
 **Uputstvo za pokretanje Hill Cipher programa**
 1. Potrebno je pokrenuti izvršni fajl **main.exe** (ili **main.py** u VS Code ili drugom Python okruženju).
-**Napomena**: Potrebno je imati installiran Python (verzija 3.x). 
+**Napomena**: Da bi pokrenuli **main.py** potrebno je imati installiran Python (verzija 3.x). 
 
 **Uputstvo za upotrebu programa**
 
