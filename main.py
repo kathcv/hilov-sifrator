@@ -13,7 +13,6 @@ def main():
         else:
             break
 
-    print("Key Matrix:")
     hc.display_matrix(key_matrix)
 
     while True:
@@ -32,7 +31,7 @@ def main():
                 if normalized is not None:
                     break
 
-            pad_plaintext = hc.pad_text(plaintext)
+            pad_plaintext = hc.pad_text(normalized)
             cipher_text = hc.encode(pad_plaintext, key_matrix)
             print(f"Cipher Text: {repr(cipher_text)}")
         elif operation == '2':
