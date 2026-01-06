@@ -37,10 +37,15 @@ def main():
         elif operation == '2':
             while True:
                 cipher_text = input("Enter cipher text to be decrypted: ")
+
+                if (len(cipher_text) % 4) != 0:
+                    print("Invalid cipher text length. It must be a multiple of 4.")
+                    continue
+
                 normalized = hc.normalize_text(cipher_text)
                 if normalized is not None:
                     break
-
+                
             decrypted_text = hc.decode(normalized, key_matrix)
             print(f"Decrypted Text: {repr(decrypted_text)}")
         elif operation == '3':
