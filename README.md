@@ -6,7 +6,8 @@
 
 -Program predstavlja **Hill Cipher encoder/decoder**.
 -Pri pokretanju programa, potrebno je uneti **matricu ključa 4x4**. 
--Nakon unosa matrice, pojavljuje se meni sa opcijama:
+-Nakon unosa matrice, proverava se da li postoji inverzna matrica, ukoliko ne, potrebno je uneti ponovo matricu, sve dok nije validna.
+-Zatim se pojavljuje meni sa opcijama:
     1. **Encode**: unos plain text-a i šifrovanje.
     2. **Decode**: unos cipher text-a i dešifrovanje.
     3. **Change key matrix**: unos nove matrice ključa.
